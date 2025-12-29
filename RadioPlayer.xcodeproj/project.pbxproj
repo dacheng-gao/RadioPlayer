@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00795CD6EB1F1C36E00EFF47 /* MediaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CECE4CC3A2C344C99D243 /* MediaResponse.swift */; };
+		1C865DDBB7D7B840ECA2BB40 /* PlayerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A9983A583BA90DEA479D3 /* PlayerViewModelTests.swift */; };
 		20464704440B88469CE4F20C /* PlayerStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7C469664E33B583FE9AD2A /* PlayerStateTests.swift */; };
 		29B0FC6E4BE28FA57B012BD1 /* RadioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01856E3F04329D66ADC4256 /* RadioPlayerTests.swift */; };
 		2EC692DB279F676FEDBA57AB /* PlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F1182E4B7CE8E5CCF80ED /* PlayerState.swift */; };
+		3F47F4FF735140936EFEAF3F /* AudioPlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC04AF9EE5B0750449C59A58 /* AudioPlayerProtocol.swift */; };
 		412B563C79C991A7F72E4685 /* MediaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645B0ED134B531558A92CAB /* MediaAPIClientTests.swift */; };
 		6EF52639E1C353E8E9482FA2 /* RadioPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDC635E54E206FC87AB7C3 /* RadioPlayerApp.swift */; };
 		852B6DC556E5996CA68922E0 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F88AEE91227360221122A5 /* URLSessionProtocol.swift */; };
 		8613AA9936DA0D9955973F1F /* MediaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A623F072BCED79C3E3208 /* MediaAPIClient.swift */; };
 		9B367E990829DB9C0C6B15AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187536E52E3FB6F03682490C /* ContentView.swift */; };
+		CDE8E62B8E35CDD8762170A3 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C06F167A8C0A88021DC53D4 /* PlayerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +37,14 @@
 		5645B0ED134B531558A92CAB /* MediaAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAPIClientTests.swift; sourceTree = "<group>"; };
 		75764129655032523AE69A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7F7F1182E4B7CE8E5CCF80ED /* PlayerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerState.swift; sourceTree = "<group>"; };
+		8C06F167A8C0A88021DC53D4 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		9E7C469664E33B583FE9AD2A /* PlayerStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStateTests.swift; sourceTree = "<group>"; };
 		A01856E3F04329D66ADC4256 /* RadioPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayerTests.swift; sourceTree = "<group>"; };
 		A204235C6453E7173B690009 /* RadioPlayer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RadioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F88AEE91227360221122A5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		AF7A623F072BCED79C3E3208 /* MediaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAPIClient.swift; sourceTree = "<group>"; };
+		CC04AF9EE5B0750449C59A58 /* AudioPlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerProtocol.swift; sourceTree = "<group>"; };
+		CE7A9983A583BA90DEA479D3 /* PlayerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelTests.swift; sourceTree = "<group>"; };
 		CECDC635E54E206FC87AB7C3 /* RadioPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayerApp.swift; sourceTree = "<group>"; };
 		D9C341B34EED6C7DC6CF5230 /* RadioPlayerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = RadioPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,8 +71,17 @@
 			isa = PBXGroup;
 			children = (
 				7F7F1182E4B7CE8E5CCF80ED /* PlayerState.swift */,
+				8C06F167A8C0A88021DC53D4 /* PlayerViewModel.swift */,
 			);
 			path = AppCore;
+			sourceTree = "<group>";
+		};
+		98CE2D86BD8D8D17C6092629 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CC04AF9EE5B0750449C59A58 /* AudioPlayerProtocol.swift */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		A38BC57BE30D05B50C615EA7 /* RadioPlayer */ = {
@@ -76,6 +91,7 @@
 				75764129655032523AE69A78 /* Info.plist */,
 				CECDC635E54E206FC87AB7C3 /* RadioPlayerApp.swift */,
 				324CEB44CFDF418432492D48 /* AppCore */,
+				98CE2D86BD8D8D17C6092629 /* Audio */,
 				DA618F6929EEA68FB6D3C94D /* Network */,
 			);
 			path = RadioPlayer;
@@ -105,6 +121,7 @@
 			children = (
 				5645B0ED134B531558A92CAB /* MediaAPIClientTests.swift */,
 				9E7C469664E33B583FE9AD2A /* PlayerStateTests.swift */,
+				CE7A9983A583BA90DEA479D3 /* PlayerViewModelTests.swift */,
 				A01856E3F04329D66ADC4256 /* RadioPlayerTests.swift */,
 			);
 			path = RadioPlayerTests;
@@ -184,6 +201,7 @@
 			files = (
 				412B563C79C991A7F72E4685 /* MediaAPIClientTests.swift in Sources */,
 				20464704440B88469CE4F20C /* PlayerStateTests.swift in Sources */,
+				1C865DDBB7D7B840ECA2BB40 /* PlayerViewModelTests.swift in Sources */,
 				29B0FC6E4BE28FA57B012BD1 /* RadioPlayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,10 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F47F4FF735140936EFEAF3F /* AudioPlayerProtocol.swift in Sources */,
 				9B367E990829DB9C0C6B15AF /* ContentView.swift in Sources */,
 				8613AA9936DA0D9955973F1F /* MediaAPIClient.swift in Sources */,
 				00795CD6EB1F1C36E00EFF47 /* MediaResponse.swift in Sources */,
 				2EC692DB279F676FEDBA57AB /* PlayerState.swift in Sources */,
+				CDE8E62B8E35CDD8762170A3 /* PlayerViewModel.swift in Sources */,
 				6EF52639E1C353E8E9482FA2 /* RadioPlayerApp.swift in Sources */,
 				852B6DC556E5996CA68922E0 /* URLSessionProtocol.swift in Sources */,
 			);
