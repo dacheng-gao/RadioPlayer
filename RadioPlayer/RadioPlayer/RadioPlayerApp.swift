@@ -4,7 +4,12 @@ import SwiftUI
 struct RadioPlayerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                viewModel: PlayerViewModel(
+                    mediaProvider: MediaAPIClient(),
+                    audioPlayer: AudioPlayerService()
+                )
+            )
         }
     }
 }

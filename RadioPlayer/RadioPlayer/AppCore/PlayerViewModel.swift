@@ -9,6 +9,7 @@ extension MediaAPIClient: MediaStreamProviding {}
 @MainActor
 final class PlayerViewModel: ObservableObject {
     @Published private(set) var state: PlayerState = .idle
+    let title = AppConfig.stationTitle
 
     private let mediaProvider: MediaStreamProviding
     private let audioPlayer: AudioPlaying
