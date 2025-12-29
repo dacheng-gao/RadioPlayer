@@ -20,6 +20,8 @@ targets:
         UILaunchScreen: {}
         UIRequiredDeviceCapabilities:
           - armv7
+        UIBackgroundModes:
+          - audio
     settings:
       base:
         INFOPLIST_FILE: RadioPlayer/RadioPlayer/Info.plist
