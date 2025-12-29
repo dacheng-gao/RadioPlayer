@@ -1,0 +1,39 @@
+name: RadioPlayer
+options:
+  createIntermediateGroups: true
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 16.0
+    PRODUCT_BUNDLE_IDENTIFIER: com.example.RadioPlayer
+    SWIFT_VERSION: 5.9
+
+targets:
+  RadioPlayer:
+    type: application
+    platform: iOS
+    sources:
+      - path: RadioPlayer/RadioPlayer
+    info:
+      path: RadioPlayer/RadioPlayer/Info.plist
+      properties:
+        CFBundleDisplayName: RadioPlayer
+        UILaunchScreen: {}
+        UIRequiredDeviceCapabilities:
+          - armv7
+    settings:
+      base:
+        INFOPLIST_FILE: RadioPlayer/RadioPlayer/Info.plist
+    scheme:
+      testTargets:
+        - RadioPlayerTests
+  RadioPlayerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: RadioPlayer/RadioPlayerTests
+    dependencies:
+      - target: RadioPlayer
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.RadioPlayerTests
