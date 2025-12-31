@@ -4,7 +4,7 @@ options:
 settings:
   base:
     IPHONEOS_DEPLOYMENT_TARGET: 16.0
-    PRODUCT_BUNDLE_IDENTIFIER: com.example.RadioPlayer
+    PRODUCT_BUNDLE_IDENTIFIER: com.gaodacheng.RadioPlayer
     SWIFT_VERSION: 5.9
 
 targets:
@@ -25,6 +25,12 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: RadioPlayer/RadioPlayer/Info.plist
+        DEVELOPMENT_TEAM: HF9539F7A4
+        CODE_SIGN_IDENTITY: iPhone Developer
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: "0.1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
     scheme:
       testTargets:
         - RadioPlayerTests
@@ -38,4 +44,4 @@ targets:
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.RadioPlayerTests
+        PRODUCT_BUNDLE_IDENTIFIER: com.gaodacheng.RadioPlayerTests
